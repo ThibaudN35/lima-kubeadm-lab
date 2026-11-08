@@ -1,0 +1,45 @@
+# Fichiers macOS et états de travail locaux
+.DS_Store
+/.local/
+/local/
+/state/
+/logs/
+/.lima/
+.ansible/
+*.log
+
+# Images, disques et médias générés ou téléchargés
+*.img
+*.qcow2
+*.raw
+*.iso
+*.vmdk
+*.vdi
+*.asif
+
+# Configurations locales et données sensibles
+/secrets/
+.env
+.env.*
+!.env.example
+!.env.sample
+.kube/
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+admin.conf
+super-admin.conf
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.key
+*.pem
+*.p12
+*.pfx
+join-command*
+join-token*
+bootstrap-token*
+kubeadm-join*
+
+# Les définitions YAML, futurs manifestes et playbooks restent suivables.

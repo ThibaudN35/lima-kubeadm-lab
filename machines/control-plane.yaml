@@ -1,0 +1,20 @@
+# Source de création ; une instance existante conserve sa propre configuration.
+minimumLimaVersion: "2.1.1"
+
+vmType: vz
+arch: aarch64
+os: Linux
+plain: true
+
+cpus: 2
+memory: 4GiB
+disk: 30GiB
+
+# Image officielle Ubuntu datée ; aucune bascule vers un alias évolutif.
+images:
+  - location: https://cloud-images.ubuntu.com/releases/noble/release-20261017/ubuntu-24.04-server-cloudimg-arm64.img
+    arch: aarch64
+    digest: sha256:50e24e1fb79e89116e939d90aa7738f7af48c442fa1bc2510131e0b39c50348e
+
+networks:
+  - lima: user-v2
